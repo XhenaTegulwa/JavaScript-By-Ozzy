@@ -69,3 +69,20 @@ console .log (c)
 var c = a < b? a : b;
 // Output the value of "c"
 console .log (c)
+// An expression is an operand that gives a value for example (Num / num2)
+
+// INCREMENT OPERATORS
+let xNum = 20;
+let yNum = 30;
+// This called a post Increment
+console .log (xNum++)
+console .log (xNum)
+// Pre-Increment (First Add One on the value of xNum)
+console .log (++xNum)
+console .log (xNum)
+
+// Decrement Operators
+console .log (xNum--) //Post Decrement
+console .log (--xNum) //Pre Decrement
+
+console .log (xNum+=10)
