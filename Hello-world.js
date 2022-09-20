@@ -1,7 +1,7 @@
 
 // Syntax and Semantics of JavaScript
 // The command line to print what is typed in the terminal
-console .log ("Hello World Xhena");
+console.log ("Hello World Xhena");
 
 // Declaring Variables in JS
 let myname = "Xhena Tegulwa";
