@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access Elements in the DOM</title>
+    <style>
+        *{Padding:10px; margin: 5px; border: 1px solid #dedede;}
+        html{font-family: sans-serif; color: #333;}
+        body{ max-width: 600px; margin: 0 auto; padding: 0 15px;}
+        
+    </style>
+</head>
+<body>
+    <h1>Access Elements in the DOM</h1>
+    <h2>ID (#demo)</h2>
+    <div id="demo">Access me by id</div>
+
+    <h2>Class ( .demo)</h2>
+    <div class="demo">Access me by Class(1)</div>
+    <div class="demo">Access me by Class(2)</div>
+
+    <h2>Tag (Article)</h2>
+    <article>Access me by Article (1)</article>
+    <article>Access me by Article (2)</article>
+
+    <h2>Querry Selector</h2>
+    <div id="demo-querry">Access me by Querry</div>
+
+    <h2>Querry Selector All</h2>
+    <div class="demo-querry-all">Access me by Querry Selector all (1)</div>
+    <div class="demo-querry-all">Access me by Querry Selector all (2)</div>
+</body>
+    <script>
+        const demoId = document.getElementById("demo");
+        const demoClass = document.getElementsByClassName("demo");
+        const demoTag = document.getElementsByTagName("article");
+        const demoSelector = document.querySelector("#demo-querry")
+        const demoQuerryAll = document.querySelectorAll(".demo-querry-all")
+        // JS for the IDs
+        demoId.style.border = "4px dotted purple";
+        // JS Loop for classes
+        for(i = 0; i < 2; i++){
+            demoClass[i].style.border = "3px solid red";
+        }
+        // JS Loop for articles
+        for(i = 0; i < demoTag.length; i++){
+            demoTag[i].style.border = "2px solid green";
+        }
+        // JS for the Querries
+        demoSelector.style.border = "2px dotted orange";
+        // JS For Querry-All
+        demoQuerryAll.forEach(querry => {
+            querry.style.border = "2px solid pink"
+        }
+
+        )
+        
+    </script>
+</html>

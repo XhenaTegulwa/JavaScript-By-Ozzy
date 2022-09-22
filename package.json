@@ -1,0 +1,28 @@
+{
+  "name": "javascript-by-osman",
+  "version": "1.0.0",
+  "description": "Test ESLint",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "format:check":"prettier --check .",
+   "format:write": "prettier --write .",
+   "lint:check": "eslint .",
+   "lint:fix": "eslint --fix ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/XhenaTegulwa/JavaScript-By-Ozzy.git"
+  },
+  "author": "Xhena Tegulwa",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/XhenaTegulwa/JavaScript-By-Ozzy/issues"
+  },
+  "homepage": "https://github.com/XhenaTegulwa/JavaScript-By-Ozzy#readme",
+  "dependencies": {
+    "eslint": "^8.23.1",
+    "eslint-config-prettier": "^8.5.0",
+    "prettier": "^2.7.1"
+  }
+}
